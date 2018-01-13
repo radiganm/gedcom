@@ -1,0 +1,16 @@
+#!/bin/sh
+### gedcom
+###
+### Copyright 2017 Mac Radigan
+### All Rights Reserved
+
+  d=${0%/*}; f=${0##*/}; n=${f%.*}; e=${f##*.}
+  root=${0%/*}/..
+
+ #export PYTHONPATH=.
+ #export PYTHONPATH=${PYTHONPATH}:${root}/library 
+ #python3 -O $root/$n.py $*
+
+ env LD_LIBRARY_PATH=$root $root/bin/gedcom $*
+
+### *EOF*

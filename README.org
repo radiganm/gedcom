@@ -1,0 +1,4 @@
+#+TITLE: GEDCOM utilities for Python
+#+AUTHOR: Mac Radigan
+
+ # *EOF* 
